@@ -1,0 +1,9 @@
+{
+	"servers": {
+		"shadcn-mcp-server": {
+			"url": "https://www.shadcn.io/api/mcp",
+			"type": "http"
+		}
+	},
+	"inputs": []
+}
