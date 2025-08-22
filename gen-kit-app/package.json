@@ -1,0 +1,27 @@
+{
+  "name": "gen-kit-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "tsx watch src/server.ts",
+    "genkit": "genkit start -- npx tsx --watch src/server.ts",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.11.0",
+  "devDependencies": {
+    "tsx": "^4.20.4",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@genkit-ai/express": "^1.16.1",
+    "@genkit-ai/googleai": "^1.16.1",
+    "@types/express": "^5.0.3",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "genkit": "^1.16.1"
+  }
+}
