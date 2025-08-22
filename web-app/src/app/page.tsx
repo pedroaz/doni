@@ -34,10 +34,10 @@ export default function Home() {
           active === "events-planner"
             ? "Tell me your date, vibe, and neighborhood. I’ll draft a plan and suggest tickets."
             : active === "trip-planner"
-            ? "Tell me when you're visiting, your interests, and budget. I’ll build a Berlin itinerary."
-            : active === "voice"
-            ? "Starting a voice-friendly chat. Press and hold the mic to talk (mock)."
-            : "Ask me anything about Berlin — nightlife, events, transport, visas, hotspots.",
+              ? "Tell me when you're visiting, your interests, and budget. I’ll build a Berlin itinerary."
+              : active === "voice"
+                ? "Starting a voice-friendly chat. Press and hold the mic to talk (mock)."
+                : "Ask me anything about Berlin — nightlife, events, transport, visas, hotspots.",
       };
       setMessages((m) => [...m, reply]);
     }, 600);
@@ -60,10 +60,10 @@ export default function Home() {
               Mode: {active === "events-planner"
                 ? "Events Planner"
                 : active === "trip-planner"
-                ? "Trip Planner"
-                : active === "voice"
-                ? "Voice Conversation"
-                : "Chat"}
+                  ? "Trip Planner"
+                  : active === "voice"
+                    ? "Voice Conversation"
+                    : "Chat"}
             </p>
           </div>
         </header>
@@ -108,10 +108,10 @@ export default function Home() {
                     active === "events-planner"
                       ? "Plan a night out in Friedrichshain (budget €30)"
                       : active === "trip-planner"
-                      ? "3-day Berlin itinerary (art + food)"
-                      : active === "voice"
-                      ? "How does voice chat work?"
-                      : "Best techno parties this weekend?";
+                        ? "3-day Berlin itinerary (art + food)"
+                        : active === "voice"
+                          ? "How does voice chat work?"
+                          : "Best techno parties this weekend?";
                   handleSend(seed);
                 }}
               >
