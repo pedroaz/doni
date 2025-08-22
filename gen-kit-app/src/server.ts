@@ -61,4 +61,4 @@ app.listen(PORT, () => {
     console.log(`Streaming server running on http://localhost:${PORT}`);
 });
 
-module.exports = app;
+export default app;
