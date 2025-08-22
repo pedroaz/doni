@@ -1,0 +1,23 @@
+{
+  "name": "gen-kit-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "genkit": "genkit start -- npx tsx --watch src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.11.0",
+  "devDependencies": {
+    "tsx": "^4.20.4",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@genkit-ai/googleai": "^1.16.1",
+    "dotenv": "^17.2.1",
+    "genkit": "^1.16.1"
+  }
+}
