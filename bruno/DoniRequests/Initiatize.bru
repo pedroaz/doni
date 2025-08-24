@@ -1,0 +1,35 @@
+meta {
+  name: Initiatize
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3666/mcp
+  body: json
+  auth: inherit
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json, text/event-stream
+}
+
+body:json {
+  {
+    "jsonrpc": "2.0",
+    "id": "1",
+    "method": "tools/call",
+    "params": {
+      "name": "add",
+      "arguments": {
+        "a": 2,
+        "b": 3
+      }
+    }
+  }
+}
+
+settings {
+  encodeUrl: true
+}

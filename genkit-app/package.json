@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "server": "tsx watch src/server.ts",
-    "genkit": "genkit start -- npx tsx --watch src/server.ts",
+    "dev": "genkit start -- npx tsx --watch src/server.ts",
     "build": "tsc"
   },
   "keywords": [],
